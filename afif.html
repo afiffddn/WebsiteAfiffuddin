@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title> Intro Web Design </title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles/layout.css" type="text/css">
+<!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
+</head>
+<body background="bg.jpg">
+<div class="wrapper row1">
+  <header id="header" class="clear">
+    <div id="hgroup">
+    <h1><a href="#">AFIFFUDDIN NOLI </a></h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#aboutme"> About Me </a></li>
+        <li><a href="#skills"> Skills </a></li>
+        <li><a href="#education"> Education </a></li>
+        <li><a href="#gallery"> Gallery </a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+
+<!-- content -->
+<div class="wrapper row2">
+  <div id="container" class="clear">
+     
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="pic2.jpg" style="width:960px" "height:500" "border-top:5px solid white">
+  <img class="mySlides" src="1.jpg" style="width:960px" "height:500">
+  <img class="mySlides" src="pict.jpg" style="width:960px" "height:500">
+
+</div>
+    <section id="shout">
+      <h1 id="about me"> About Me </h1>
+      <p> My name is Afiffuddin Bin Noli, I am from Malaysia and 22 years old. Currently,I am studying at Unisel Bestari jaya and taking bachelor in Software Engineering. My faculty name is Communication, Visual Art and Computing and it known as CVAC. I have 8 siblings and I am the third one. I am so happy with my big family and hope that we will blessed till akhirat. </p>
+    </section>
+<h1 id="gallery"> Gallery </h1>
+
+<table width="500" cellpadding="10" align="center">
+
+<tr>
+
+<td align="center" valign="center">
+<img src="pic4.jpg" alt="description here"/>
+
+<td align="center" valign="center">
+<img src="myself.jpg" alt="" border="3">
+</td>
+
+<td align="center" valign="center">
+<img src="family.jpg" alt="description here" />
+</td>
+
+</tr>
+
+</table>
+
+<br>
+<br>
+
+    <!-- content body -->
+    <div id="content">
+      <!-- main content -->
+      <section>
+        <article>
+         <center> <h1 id="skills"> Software Skills </h1></center>
+         <p> There are a lot of languages skills I have been developed since when I was in my secondary school.</p>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<p>HTML</p>
+<div class="container">
+  <div class="skills html">90%</div>
+</div>
+
+<p>CSS</p>
+<div class="container">
+  <div class="skills css">80%</div>
+</div>
+
+<p>JavaScript</p>
+<div class="container">
+  <div class="skills js">65%</div>
+</div>
+
+<p>PHP</p>
+<div class="container">
+  <div class="skills php">60%</div>
+</div>
+        </article>
+      </section>
+      <section id="services" class="last clear">
+
+
+        <!-- article 1 -->
+        <article class="one_third">
+          <h1>Achievement</h1>
+          <img src="logo.jpg" alt="">
+          <ul style="list-style-type:circle;">
+               <li>SPM 9A</li>
+               <li>Dean's list </li>
+               <li>Fotball Club for Shah Alam FC </li>
+               <li>The best athlete in SMK TTDI jaya</li>
+          </ul>
+        </article>
+
+
+        <!-- article 2 -->
+        <article class="one_third lastbox">
+          <h1>Recreation</h1>
+          <img src="hobby.jpg" alt="">
+          <p>I love to travel around the world with my family and friends. I used to swim every weekend on my leisure time to make my day productively.  </p>
+        </article>
+      </section>
+    </div>
+
+<br>
+
+    <!-- right column -->
+    <aside id="right_column">
+      <h2 id="education"> Educational Qualifications </h2>
+<br>
+      <nav>
+        <ul>
+          <li><a href="#">Bachelor Hons in Software Engineering</a></li>
+          <li><a href="#">Master in  Data Forensic </a></li>
+          <li><a href="#">Sijil Pelajaran Malaysia</a></li>
+        </ul>
+      </nav>
+
+
+      <!-- /nav -->
+      <center><h2 class="title"> Contact </h2></center>
+      <section class="last">
+        <address>
+        AFIFFUDDIN BIN NOLI<br>
+        NO 26 Jalan Klasik U2/42<br>
+        Taman TTDI Jaya, 40150,<br>
+        Shah Alam<br>
+        Selangor<br>
+        <br>
+        Tel: +60 188711201<br>
+        Email: <a href="#">afiffuddinnoli97@gmail.com</a>
+        </address>
+      </section>
+      <!-- /section -->
+    </aside>
+    <!-- / content body -->
+  </div>
+</div>
+
+
+
+<!-- footer -->
+<div class="wrapper row3">
+  <footer id="footer" class="clear">
+    <p class="fl_left"><center> Copyright &copy; 2018 - All Rights Reserved </center></p>
+<center>
+<table>
+ <tr>
+  <td><img src="insta.jpg"><a href<p><a href="https://www.instagram.com/_afiffddn/">instagram</a></p></td>
+  <td><img src="twitter.jpg"><a href<p><a href="https://twitter.com/afiffddn">twitter</a></p></td>
+  <td><img src="facebook.jpg"><a href<p><a href="https://www.facebook.com/afiffuddin.afif.9">facebook</a></p></td>
+ </tr>
+</table>
+</center>
+  </footer>
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>
